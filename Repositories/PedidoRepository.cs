@@ -21,7 +21,7 @@ namespace LanchesMac.Repositories
             pedido.PedidoEnviado = DateTime.Now;
             _context.Pedidos.Add(pedido);
             _context.SaveChanges();
-
+            //Alteracao
             var carrinhoCompraItens = _carrinhoCompra.CarrinhoCompraItens;
 
             foreach(var carrinhoItem in carrinhoCompraItens)
